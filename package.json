@@ -1,0 +1,53 @@
+{
+    "name": "glassit-linux",
+    "displayName": "GlassIt Linux",
+    "description": "Adds transparency to VSCode in Linux.",
+    "version": "1.0.0",
+    "publisher": "nowsci",
+    "engines": {
+        "vscode": "^1.18.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "*"
+    ],
+	"homepage": "https://github.com/Fmstrat/glassit-linux",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Fmstrat/glassit-linux.git"
+    },
+	"bugs": {
+		"url": "https://github.com/Fmstrat/glassit-linux/issues"
+    },
+	"license": "SEE LICENSE IN 'LICENSE'",
+    "icon": "icon.png",
+    "main": "extension.js",
+    "contributes": {
+        "configuration": [
+            {
+                "title": "GlassIt Linux",
+                "properties": {
+                    "glassit-linux.opacity": {
+                        "type": "integer",
+                        "scope": "window",
+                        "description": "Set to the percentage you wish windows to be opaque (requires restart)",
+                        "default": 97
+                    }
+                }
+            }
+        ]
+    },
+    "scripts": {
+        "na-vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install"
+    },
+    "devDependencies": {
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.6",
+        "@types/node": "^7.0.43",
+        "@types/mocha": "^2.2.42"
+    }
+}
