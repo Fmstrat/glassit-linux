@@ -13,15 +13,15 @@
     "activationEvents": [
         "*"
     ],
-	"homepage": "https://github.com/Fmstrat/glassit-linux",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/Fmstrat/glassit-linux.git"
+    "homepage": "https://github.com/Fmstrat/glassit-linux",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Fmstrat/glassit-linux.git"
     },
-	"bugs": {
-		"url": "https://github.com/Fmstrat/glassit-linux/issues"
+    "bugs": {
+        "url": "https://github.com/Fmstrat/glassit-linux/issues"
     },
-	"license": "SEE LICENSE IN 'LICENSE'",
+    "license": "SEE LICENSE IN 'LICENSE'",
     "icon": "icon.png",
     "main": "extension.js",
     "contributes": {
@@ -45,9 +45,9 @@
         "postinstall": "node ./node_modules/vscode/bin/install"
     },
     "devDependencies": {
-        "typescript": "^2.6.1",
-        "vscode": "^1.1.6",
+        "@types/mocha": "^7.0.1",
         "@types/node": "^7.0.43",
-        "@types/mocha": "^2.2.42"
+        "typescript": "^3.7.5",
+        "vscode": "^1.1.6"
     }
 }
