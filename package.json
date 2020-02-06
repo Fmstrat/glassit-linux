@@ -34,6 +34,15 @@
                         "scope": "window",
                         "description": "Set to the percentage you wish windows to be opaque (requires restart)",
                         "default": 97
+                    },
+                    "glassit-linux.vscode-flavour": {
+                        "type": "string",
+                        "scope": "window",
+                        "default": "Visual Studio Code",
+                        "enum": [
+                            "Visual Studio Code",
+                            "VSCodium"
+                        ]
                     }
                 }
             }
