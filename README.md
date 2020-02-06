@@ -12,11 +12,14 @@ sudo apt install -y wmctrl x11-utils bash
 
 ## Usage
 - Install the extension
-- Restart any single VSCode window
+- If you have VSCodium instead of VSCode you need to change `Glassit-linux: VSCode Flavour` in the settings to VSCodium
+- Restart any single VSCode/VSCodium window
 
 ## Settings
 
 Opacity defaults to `97%`, but can be set with the setting `Glassit-linux: Opacity` in VSCode's settings window. A restart of any single window is required for this setting to take effect.
+
+VSCode flavour defaults to `Visual Studio Code`, but if you are running VSCodium you can change this with `Glassit-linux: VSCode Flavour` in the settings window. A restart of any single window is required for this setting to take effect.
 
 ## Links
 - Repo: https://github.com/Fmstrat/glassit-linux
